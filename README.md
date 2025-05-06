@@ -16,7 +16,7 @@ sudo apt install python3.10-full python3.10-dev -y
   libncurses5-dev libncursesw5-dev \
   xz-utils tk-dev libffi-dev liblzma-dev python3-openssl git
   
-# Pyenv
+# Pyenv (gerenciador de versoes python)
 curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
 # Seguir instruções do Pyenv
 
@@ -34,8 +34,8 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 # Instalar Spaceship Prompt
 # https://github.com/spaceship-prompt/spaceship-prompt
-git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
-ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+- git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
+- ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
 # Mudar ~/.zshrc -> ZSH_THEME="spaceship"
 
@@ -54,6 +54,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 mkdir -p ~/.fonts
 git clone https://github.com/pdf/ubuntu-mono-powerline-ttf.git ~/.fonts/ubuntu-mono-powerline-ttf
 fc-cache -vf
+
+colar export gerado
 
 ### REBOOT!!!!!!!!!!!!!!!!!!!!!
 
