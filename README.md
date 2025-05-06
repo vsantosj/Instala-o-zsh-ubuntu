@@ -36,8 +36,11 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 # https://github.com/spaceship-prompt/spaceship-prompt
 - git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 - ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+  
 
 # Mudar ~/.zshrc -> ZSH_THEME="spaceship"
+
+## colar export gerado
 
 # Instalar Zsh Autosuggestions
 # https://github.com/zsh-users/zsh-autosuggestions
@@ -54,8 +57,10 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 mkdir -p ~/.fonts
 git clone https://github.com/pdf/ubuntu-mono-powerline-ttf.git ~/.fonts/ubuntu-mono-powerline-ttf
 fc-cache -vf
+- mudar a fonte em configuraçẽos para 
 
-colar export gerado
+## https://github.com/spaceship-prompt/spaceship-prompt
+- ir no site do spaceship prompt e pegar comando  
 
 ### REBOOT!!!!!!!!!!!!!!!!!!!!!
 
@@ -65,12 +70,39 @@ colar export gerado
 pyenv update 
 
 
-#listar todas as versões de python
+# listar todas as versões de python
 pyenv install -l
 
 
-#instalar uma versão especifica 
+# instalar uma versão especifica 
 pyenv install versãoquedeseja
 
- #utilizar python global
+ # utilizar python global
  pyenv vlobal e a versãoquedesejadeixarglobal
+
+
+ settings json vscode
+## Configurações do VS Code
+
+Adicione o seguinte conteúdo ao seu arquivo `settings.json` para configurar seu ambiente:
+
+```json
+{
+    "workbench.startupEditor": "none",
+    "editor.fontSize": 14,
+    "explorer.compactFolders": false,
+    "code-runner.runInTerminal": true,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "python": "cls ; python -u"
+    },
+    "code-runner.ignoreSelection": true,
+    "workbench.colorTheme": "OM Theme (Default Dracula Italic)",
+    "workbench.iconTheme": "material-icon-theme",
+    "python.defaultInterpreterPath": "python"
+}
+
+
