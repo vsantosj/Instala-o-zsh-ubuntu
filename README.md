@@ -55,7 +55,7 @@ mkdir -p ~/.fonts
 git clone https://github.com/pdf/ubuntu-mono-powerline-ttf.git ~/.fonts/ubuntu-mono-powerline-ttf
 fc-cache -vf
 
-# REBOOT!!!!!!!!!!!!!!!!!!!!!
+### REBOOT!!!!!!!!!!!!!!!!!!!!!
 
 
 
