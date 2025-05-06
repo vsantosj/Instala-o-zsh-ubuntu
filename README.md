@@ -10,9 +10,9 @@ sudo apt upgrade -y
 sudo apt install python3.10-full python3.10-dev -y
 
 # Instalar pacotes a seguir
-sudo apt install git curl build-essential dkms perl wget -y
-sudo apt install gcc make default-libmysqlclient-dev libssl-dev -y
-sudo apt install -y zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm \
+- sudo apt install git curl build-essential dkms perl wget -y
+- sudo apt install gcc make default-libmysqlclient-dev libssl-dev -y
+- sudo apt install -y zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm \
   libncurses5-dev libncursesw5-dev \
   xz-utils tk-dev libffi-dev liblzma-dev python3-openssl git
   
