@@ -1,4 +1,4 @@
-# Instala-o-zsh-ubuntu
+# Instala-o-zsh-ubuntu/Debian
 
 #!/bin/bash
 
